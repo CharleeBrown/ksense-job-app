@@ -2,10 +2,12 @@
 import './request.css';
 const users = [];
 function getData(){
-  fetch('https://jsonplaceholder.typicode.com/users')
-        .then(response => response.json)
-        .then(data =>console.log(data))
-        };
+    fetch('https://jsonplaceholder.typicode.com/posts/1')
+    .then((response) => response.json())
+    .then((json) => console.log("id"+json['id'])); 
+}
+
+
 
 function RequestData() {
   return (
